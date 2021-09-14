@@ -13,6 +13,7 @@
     "src"
   ],
   "scripts": {
+    "postinstall": "tsdx build --tsconfig ./tsconfig.build.json",
     "build": "tsdx build --tsconfig ./tsconfig.build.json",
     "lint": "tsdx lint src test",
     "type-check": "tsc --noEmit",
