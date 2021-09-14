@@ -1,4 +1,4 @@
-import { Sandbox, createSandbox } from '../test/sandbox'
+import { Sandbox, createSandbox } from './test/sandbox'
 import {
   AggregatePaginatedResult,
   aggregatePaginated,

@@ -13,11 +13,9 @@
     "src"
   ],
   "scripts": {
-    "postinstall": "tsdx build --tsconfig ./tsconfig.build.json",
-    "build": "tsdx build --tsconfig ./tsconfig.build.json",
-    "lint": "tsdx lint src test",
-    "type-check": "tsc --noEmit",
-    "test": "tsdx test"
+    "postinstall": "yarn run build",
+    "build": "tsc --build",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "base64-url": "^2.3.3",
@@ -39,7 +37,6 @@
     "lint-staged": "10.5.1",
     "mongodb": "3.7.0",
     "mongodb-memory-server": "6.9.2",
-    "tsdx": "0.14.1",
-    "typescript": "4.0.5"
+    "typescript": "4.4.3"
   }
 }

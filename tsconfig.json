@@ -1,13 +1,17 @@
 {
   "compilerOptions": {
+    "module": "commonjs",
     "declaration": true,
-    "esModuleInterop": true,
-    "importHelpers": true,
-    "lib": ["esnext"],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noImplicitReturns": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2017",
+    "lib": ["ESNext", "DOM", "ES2017"],
     "sourceMap": true,
-    "strict": true
-  }
+    "incremental": true,
+    "esModuleInterop": true,
+    "rootDir": "./src"
+  },
+  "include": ["src/*"],
+  "exclude": ["node_modules", "dist", "*test.ts", "**/*spec.ts"]
 }

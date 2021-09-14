@@ -1,4 +1,4 @@
-import { Sandbox, createSandbox } from '../test/sandbox'
+import { Sandbox, createSandbox } from './test/sandbox'
 import { FindPaginatedResult, findPaginated } from './find-paginated'
 
 let sandbox: Sandbox
